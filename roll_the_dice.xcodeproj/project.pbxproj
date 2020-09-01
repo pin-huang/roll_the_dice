@@ -16,6 +16,9 @@
 		53786D6424FCAA82003B91E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53786D6224FCAA82003B91E0 /* LaunchScreen.storyboard */; };
 		53786D6F24FCAA82003B91E0 /* roll_the_diceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53786D6E24FCAA82003B91E0 /* roll_the_diceTests.swift */; };
 		53786D7A24FCAA83003B91E0 /* roll_the_diceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53786D7924FCAA83003B91E0 /* roll_the_diceUITests.swift */; };
+		53786D8824FCCB8D003B91E0 /* rolldice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53786D8724FCCB8C003B91E0 /* rolldice.mp3 */; };
+		53786D8924FCCB8D003B91E0 /* rolldice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53786D8724FCCB8C003B91E0 /* rolldice.mp3 */; };
+		53786D8A24FCCB8D003B91E0 /* rolldice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53786D8724FCCB8C003B91E0 /* rolldice.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		53786D7524FCAA83003B91E0 /* roll_the_diceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roll_the_diceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53786D7924FCAA83003B91E0 /* roll_the_diceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roll_the_diceUITests.swift; sourceTree = "<group>"; };
 		53786D7B24FCAA83003B91E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53786D8724FCCB8C003B91E0 /* rolldice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rolldice.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				53786D5924FCAA7C003B91E0 /* ViewController.swift */,
 				53786D5B24FCAA7C003B91E0 /* Main.storyboard */,
 				53786D5E24FCAA7C003B91E0 /* ContentView.swift */,
+				53786D8724FCCB8C003B91E0 /* rolldice.mp3 */,
 				53786D6024FCAA82003B91E0 /* Assets.xcassets */,
 				53786D6224FCAA82003B91E0 /* LaunchScreen.storyboard */,
 				53786D6524FCAA82003B91E0 /* Info.plist */,
@@ -234,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53786D8824FCCB8D003B91E0 /* rolldice.mp3 in Resources */,
 				53786D6424FCAA82003B91E0 /* LaunchScreen.storyboard in Resources */,
 				53786D6124FCAA82003B91E0 /* Assets.xcassets in Resources */,
 				53786D5D24FCAA7C003B91E0 /* Main.storyboard in Resources */,
@@ -244,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53786D8924FCCB8D003B91E0 /* rolldice.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53786D8A24FCCB8D003B91E0 /* rolldice.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
