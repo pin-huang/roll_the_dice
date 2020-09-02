@@ -60,8 +60,11 @@ class ViewController: UIViewController {
         // 利用 Bundle.main 取得 app 專案內已預先存入的 骰子音效檔 mp3 的位址，並設定 AVPlayer 播放器 (因為是在 viewDidLoad 之下，所以此音效檔只會載入一次就失效了，但這裡若不先宣告，第一次執行 roll it all 會沒音效)
         let rollingDiceSound = Bundle.main.url(forResource: "rolldice", withExtension: "mp3")!
         player = AVPlayer(url: rollingDiceSound)
-        
-        
+    }
+    
+    // 點擊鍵盤外的區域，即可收起鍵盤
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
     }
     
     // 宣告 func result() 比對結果，判斷要帶出哪句台詞，並在 元件 UI Label (opponentScore、playerScore) 顯示骰子的總和
@@ -77,7 +80,7 @@ class ViewController: UIViewController {
         } else if topSum > buttomSum, playerMoney >= 0 {
             Comment.text = String(opponentWin.randomElement()!)
             opponentScore.backgroundColor = UIColor.red // 標示贏家 元件 UI Label 的底色
-            let bidMoney = Int(bid.text!) ?? 0 // 讓 元件 UI Text field 的內容 (bid ，型別為 String) 轉換成 Int 的型別
+            let bidMoney = Int(bid.text!) ?? 10 // 讓 元件 UI Text field 的內容 (bid ，型別為 String) 轉換成 Int 的型別，且預設內容值為 10
             opponentMoney = opponentMoney + bidMoney
             opponentCoin.text = String(opponentMoney)
             
@@ -91,7 +94,7 @@ class ViewController: UIViewController {
         } else {
             Comment.text = String(opponentLose.randomElement()!)
             playerScore.backgroundColor = UIColor.red
-            let bidMoney = Int(bid.text!) ?? 0
+            let bidMoney = Int(bid.text!) ?? 10
             opponentMoney = opponentMoney - bidMoney
             opponentCoin.text = String(opponentMoney)
             
@@ -206,4 +209,5 @@ class ViewController: UIViewController {
 
         }
     }
+
 }
